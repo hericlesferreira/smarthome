@@ -8,7 +8,7 @@ router.post('/:id/add', function(req, res, next) {
   var humidity = req.body.humidity;
 
   devicesService.addMeasurement(sensorId, temperature, humidity)
-  res.sendStatus(200);
+  res.send(200);
 });
 
 module.exports = router;
