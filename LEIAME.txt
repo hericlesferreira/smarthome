@@ -1,0 +1,16 @@
+publico
+  botao para login
+  listar dispositivos no index publico com status
+
+admin
+  listar dispositivos no application (administrador)
+  
+  botao cadastrar dispositivos
+  botao listar dados de leitura termometros e humidade
+
+COMPARAR COM AULA GUI 121119
+
+push atualizar json
+usar botao como <a href="CAMINHO DA ROTA PARA ALTERAR ARQUIVO">
+
+

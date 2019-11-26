@@ -1,0 +1,67 @@
+<div class="row mt-1">
+    <div class="col p-2 border-bottom border-purpple text-dark text-center">
+      <h5 class="text-pdark">Temperatura e Humidade</h5>
+    </div>
+  </div>
+    <div class="row mb-4 justify-content-center">
+      
+        <% sensors.forEach((sensor) => { %>
+          <div class="col-5 p-3 m-2 shadow-sm border rounded bg-light">
+            <div class="row">
+              <div class="col text-center">
+                  <%= sensor.id %> - <%= sensor.name %>
+              </div>
+            </div>
+            <% if (sensor.measurements.length > 0) { %>
+              <div class="row mt-2">
+                <% var readed = sensor.measurements[sensor.measurements.length -1]; %>
+                <div class="col-6">
+                  <img src="../images/icons/temperature.png" width="20"> <%= readed.temperature %>
+                </div>
+                <div class="col-6 text-right">
+                    <img src="../images/icons/humidity.png" width="20"> <%= readed.humidity %>
+                </div>
+              </div>
+            <% } %>
+          </div>
+        <% }); %>
+      </div>
+
+<!-- ATUADORES-->
+<div class="row mt-2">
+  <div class="col p-2 border-bottom border-purpple text-dark text-center">
+    <h5 class="text-pdark">Iluminação</h5>
+  </div>
+</div>
+  
+<div class="row mb-4 justify-content-center">
+    
+  <% actuators.forEach((actuator) => { %>
+    <div class="col p-3 m-2 shadow-sm border rounded bg-light">
+    <div class="row">
+      <div class="col text-center">
+          <%= actuator.id %> - <%= actuator.name %>
+      </div>
+    </div>
+        
+    <!-- VERIFICA STATUS DA LUZ-->
+    <div class="row justify-content-center">
+      <div class="col">  
+        <% if(actuator.status === 1) { %>
+          <form action="update/update" method="POST">
+            <input type="hidden" id="actuatorId" name="actuatorId" value="<%= actuator.id %>">
+            <button type="submit" class="btn btn-block text-light btn-purpple">Desligar</button>
+          </form>
+          
+        <% } else { %>
+          <form action="update/update" method="POST">
+            <input type="hidden" id="actuatorId" name="actuatorId" value="<%= actuator.id %>">
+            <button type="submit" class="btn btn-gray bg-glight btn-block">Ligar</button>
+          </form>
+
+        <% } %>
+      </div>
+    </div>
+    </div>
+  <% }); %>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SmartHome</title>
+    <%- include('imports') -%>
+  </head>
+  <body>
+
+<div class="navbar navbar-expand-lg navbar-light bg-light justify-content-center fixed-top shadow-sm">
+  <a class="navbar-brand text-pdark ml-3 m-s-0 ts-5"><img src="../images/logo.svg" width="50" class="mr-2">SmartHome</a>
+</div>
+
+<div class="container-fluid">
+   <!--DIV MENU-->
+   <%- include('menu') -%>
+
+  <!--APLICAÇAO-->
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <div class="row justify-content-center mt-10">
+
+        <div class="col-5">
+
+          <form action="createSensor" method="POST">
+            <div class="form-group">
+              <label for="sensorName">Nome do Sensor</label>
+              <input name="name" type="text" class="form-control" id="sensorName">
+            </div>
+
+            <button type="submit" class="btn mt-2 btn-sm text-light btn-block btn-purpple">Salvar</button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <%- include('imports'); -%>
+</head>
+
+<body>
+
+    <div class="container-fluid bg-pdark m-0 mb-5 pl-5 p-3">
+      <div class="row m-0 p-0">
+        <h3 class="text-light ml-5">SmartHome</h3>
+      </div>
+    </div>
+
+  <div class="container p-5">
+
+      <div class="row mt-4 mb-1 justify-content-center">
+        <h3>LOGIN</h3>
+      </div>
+
+    <div class="row mt-5 justify-content-center">
+      <div class="col col-10 col-md-5 bg-light text-center p-3">
+        <form class="form-signin" method="POST" action="login">
+
+          <% if (msg) { %>
+            <div class="alert alert-danger align-self-center" role="alert">
+                <%= msg %>
+            </div>
+          <% } %>
+
+          <div class="row mb-2 justify-content-center">
+            <div class="col col-10">
+              <div class="form-label-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3 justify-content-center">
+            <div class="col col-10">
+              <div class="form-label-group">
+                <label for="inputPassword">Senha</label>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3 justify-content-center">
+            <div class="col-10">
+              <button class="btn btn-lg btn-block btn-purpple text-light" type="submit">Entrar</button>    
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

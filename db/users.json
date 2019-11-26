@@ -1,0 +1,18 @@
+[
+  {
+    "email": "hericles@hotmail.com",
+    "name": "Héricles Ferreira",
+    "image": "pic1.jpg",
+    "permission": "Administrador",
+    "function": 1,
+    "password": "0192023a7bbd73250516f069df18b500"
+  },
+  {
+    "email": "matheus@hotmail.com",
+    "name": "Matheus Reinert",
+    "image": "pic2.jpg",
+    "permission": "Usuário Comum",
+    "function": 0,
+    "password": "0192023a7bbd73250516f069df18b500"
+  }
+]

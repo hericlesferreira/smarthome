@@ -1,0 +1,143 @@
+@media screen and (max-width: 768px) {
+    .menu-user{
+      height: 85vh !important;
+      width: 100% !important;
+      color: #2c2b2b !important;
+      float: none !important;
+    }
+  
+    .m-s-0{
+      margin: 0 !important;
+    }
+  
+    .mt-s-1{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-bottom: 0 !important;
+      margin-top: 5px !important;
+    }
+  
+    .mt-6 {
+      margin-top: 100px !important;
+    }
+  
+    .img-rounded-sm {
+      width: 60px !important;
+      height: 60px !important;
+    }
+  
+    .aplicacao {
+      height: 100vh;
+      width: 100vw;
+      margin: auto;
+      float: none !important;
+    }
+  
+    /*MOBILE NAO TEM PLANO DE FUNDO*/
+    .planta_casa {
+      background-image: url("../images/planta_casa.png"); /* INSERIR AQUI FOTO DE FUNDO BRANCO*/
+      background-color: white !important;
+      width: 100vw !important;
+    }
+    
+    .app-inf {
+      width: 80vw !important;
+      height: 30px !important;
+    }
+  }
+  
+  .container-fluid {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  
+  .bg-pdark {
+    background-color: #93228D;
+  }
+  
+  .bg-plight {
+    background-color: #B84B9E;
+  }
+  
+  .btn-gray:hover {
+    background-color: #c0bfbf;
+  }
+  
+  .bg-glight {
+    background-color: #d3d3d3;
+  }
+  
+  .btn-purpple {
+    background-color: #93228D;
+  }
+
+  .btn-purpple:hover {
+    background-color: rgb(129, 29, 124);
+  }
+  
+  .text-light {
+    color: white !important;
+  }
+
+  .text-pdark {
+    color: #93228D !important;
+  }
+  
+  .text-plight {
+    color: #B84B9E;
+  }
+  
+  .border-purpple {
+    border-color: #93228D !important;
+  }
+
+  .ts-4 {
+    font-size: 20px;
+  }
+
+  .ts-5 {
+    font-size: 30px;
+  }
+  
+  .ts-1 {
+    font-size: 12px;
+  }
+  
+
+  .mt-10 {
+    margin-top: 100px !important;
+  }
+
+  .menu-user{
+    height: 100vh;
+    width: 23.752969121%;
+    color: #2c2b2b;
+    float: left;
+  }
+  
+  .aplicacao {
+    height: 100vh;
+    width: 76.247030879%;
+    float: right;
+  }
+  
+  .img-rounded {
+    border-radius: 50%;
+  }
+  
+  .mt-6 {
+    margin-top: 120px !important;
+  }
+  
+  .index {
+    z-index: auto !important;
+    position: relative !important;
+  }
+  
+  .planta_casa {
+    background-image: url("../images/planta_casa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 507px;
+    height: 411px;
+  }

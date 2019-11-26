@@ -1,0 +1,7 @@
+<% sensors.forEach((sensor) => { %>
+  <div class="row mt-2 mt-s-1 justify-content-center">
+    <div class="col-10">
+      <a href="history/<%= sensor.id %>" class="btn btn-gray bg-glight btn-sm btn-block">Log Sensores <%= sensor.name %></a>
+    </div>
+  </div>
+<% }) %>
